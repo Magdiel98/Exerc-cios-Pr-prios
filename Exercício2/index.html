@@ -3,19 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="estilo.css">
     <script src="javascript.js" defer></script>
 </head>
 <body>
     <header>
         <h1>João Designer</h1>
+        <menu>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato </a></li>
+            </ul>
+        </menu>
     </header>
     <main>
-
+        <article>
+            <div id="sobremim">
+                <h1>Sobre Mim</h1>
+                <p>
+                    Sou desenvolvedor front-end apaixonado por criar experiências digitais leves, bonitas e funcionais. Com foco em HTML, CSS e JavaScript, desenvolvo interfaces modernas que se adaptam bem a qualquer dispositivo. Estou sempre em busca de novas formas de melhorar a usabilidade e a performance dos projetos.
+                </p>
+            </div>
+            <div id="servicos">
+                <h1>Serviços</h1>
+                <div id="caixa">
+                    <ul>
+                        <li>Design de Sites</li>
+                        <li>Layouts</li>
+                    </ul>
+                    <ul>
+                        <li>Identidade Visual</li>
+                        <li>Logos, cores</li>
+                    </ul>
+                    <ul>
+                        <li>Social Media</li>
+                        <li>Posts bonitos</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contato">
+                <h1>Entre em contato</h1>
+                <form action="">
+                    <label for="nome">Seu Nome: </label>
+                    <input type="text" name="nome">
+                    <label for="email">Seu e-mail: </label>
+                    <input type="email" name="email">
+                    <label for="mensagem">Sua mensagem: </label>
+                    <textarea name="mensagem"></textarea>
+                    <button type="button">Enviar</button>
+                </form>
+            </div>
+        </article>
     </main>
     <footer>
-
+        <p>2025 João Designer <a href="#">Instagram</a> <a href="#">LinkedIn</a></p>
     </footer>
 </body>
 </html>
