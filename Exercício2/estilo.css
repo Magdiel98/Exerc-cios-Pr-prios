@@ -63,19 +63,34 @@ div#sobremim > p
     width: 95vw;
 }
 
-div#servicos div#caixa 
-{
-    margin: auto;
-    width: 72vw;
-    border-radius: 10px;
-    box-shadow: 1px 4px 10px rgb(196, 196, 196);
-}
 
 main div#servicos div#caixa
 {
+    margin: auto;
+    width: 72vw;
+    height: 10vh;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px rgb(196, 196, 196);
     display: flex; 
     justify-content: center;
+    align-items: center;
+    transition: width 1s, height 1s;
 }
+
+main div#servicos div#caixa:hover 
+{
+    width: 80vw;
+    height: 15vh;
+    background-color: #496073;
+}
+
+
+main div#servicos div#caixa:hover li
+{
+    color: white;
+}
+
+
 
 div#servicos div#caixa ul
 {
@@ -101,23 +116,42 @@ div#contato input
 {
     width: 200px;
     height: 28px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 3px 10px rgb(196, 196, 196);    
 }
 
 div#contato textarea
 {
     width: 275px;
     height: 100px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 3px 10px rgb(196, 196, 196);    
 }
 
 div#contato label, button
 {
     margin-top: 10px;
+    
 }
 
 div#contato button 
 {
     width: 90px;
     height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 3px 10px rgb(196, 196, 196);   
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+}
+
+div#contato button:hover
+{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    box-shadow: 1px 3px 10px rgb(111, 111, 111);    
 }
 
 div#sobremim, div#servicos, div#contato

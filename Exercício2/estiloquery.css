@@ -1,0 +1,18 @@
+
+
+
+@media screen and (min-width: 772px)
+{
+    main div#sobremim p 
+    {
+        width: 733.4px;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    main div#servicos div#caixa
+    {
+        width: 576px;
+    }
+}
