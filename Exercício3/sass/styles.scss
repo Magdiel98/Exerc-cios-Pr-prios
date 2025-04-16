@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+$roxo: #AB34D1;
+$laranja: #D1991B;
+$verde: #52D19D; 
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+
+    background-color: $roxo;
+    padding: 6px;
+    box-shadow: 1px -4px 23px  $verde;
+
+    h1{
+        text-align: center;
+        color: white;
+        text-shadow: 1px 2px 7px rgb(91, 91, 91);
+    }
+
+    li{
+        display: inline;
+        text-shadow: 1px 2px 7px rgb(91, 91, 91);
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 4px;
+        border-radius: 3px;
+
+        &:hover{
+            background-color: $verde;
+        }
+    }
+
+}

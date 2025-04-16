@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #AB34D1;
+  padding: 6px;
+  box-shadow: 1px -4px 23px #52D19D;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px 7px rgb(91, 91, 91);
+}
+header li {
+  display: inline;
+  text-shadow: 1px 2px 7px rgb(91, 91, 91);
+}
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+}
+header a:hover {
+  background-color: #52D19D;
+}
+
+/*# sourceMappingURL=styles.css.map */
