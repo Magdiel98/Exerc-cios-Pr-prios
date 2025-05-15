@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Portfólio</h1>
-        <menu>
+        <div>
+            <img src="img/menu-de-hamburguer.png" alt="menuburguer" id="burguer">
+        </div>
+        <menu id="listamenu" style="display: none">
+            <ul>
+                <li><a href="#SobreMim">Sobre Mim</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </menu>
+        <menu id="listamenu2">
             <ul>
                 <li><a href="#SobreMim">Sobre Mim</a></li>
                 <li><a href="#Projetos">Projetos</a></li>
@@ -19,25 +30,36 @@
     </header>
     <main>
         <article>
-            <div id="SobreMim">
+            <div id="SobreMim" class="divexterna">
                 <h2>Sobre Mim</h2>
                 <p>
-                    Sou desenvolvedor front-end apaixonado por criar experiências digitais leves, bonitas e funcionais. Com foco em HTML, CSS e JavaScript, desenvolvo interfaces modernas que se adaptam bem a qualquer dispositivo. Estou sempre em busca de novas formas de melhorar a usabilidade e a performance dos projetos.
+                    Sou desenvolvedor, aprendendo a primeiro ser desenvolvedor frontend, mas determinado a ser fullstack usando 
+                    linguagens como HTML, CSS, JavaScript, Java. Tenho desejo ainda, de aprender a programar para celular (mobile) e 
+                    desenvolver programas desktop. Além disso, fazer implementações com Inteligência Artificial. 
                 </p>
             </div>
-            <div id="Projetos">
+            <div id="Projetos" class="divexterna">
                 <h2>Projetos</h2>
-                <div id="card1">
-
-                </div>
-                <div id="card2">
-
-                </div>
-                <div id="card3">
-
+                <div id="cards">
+                    <div id="card1">
+                        <h3>Sites</h3>
+                        <img src="img/siteformatado.jpg" alt="imagem de um site">
+                    </div>
+                    <div id="card2">
+                        <h3>Mobile</h3>
+                        <img src="img/mobileformatado.jpg" alt="imagem de celular">
+                    </div>
+                    <div id="card3">
+                        <h3>Desktop</h3>
+                        <img src="img/desktopformatado.jpg" alt="imagem de computador">
+                    </div>
+                    <div id="card4">
+                        <h3>IA</h3>
+                        <img src="img/iaformatado.jpg" alt="imagem representando inteligência artifical">
+                    </div>
                 </div>
             </div>
-            <div id="Contato">
+            <div id="Contato" class="divexterna">
                 <h2>Contato</h2>
                 <form action="">
                     <label for="nome">Nome: </label>
@@ -46,12 +68,13 @@
                     <input type="email">
                     <label for="mensagem">Mensagem: </label>
                     <textarea name="mensagem" id=""></textarea>  
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </article>
     </main>
     <footer>
-        <p>2025 Site Desenvolvido por Magdiel Gomes Ferreira <a href="#">Instagram</a> <a href="#">Linkedin</a></p>
+        <p>2025 Site Desenvolvido por Magdiel Gomes Ferreira</p>
     </footer>
 </body>
 </html>

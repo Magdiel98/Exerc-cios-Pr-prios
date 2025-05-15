@@ -1,7 +1,12 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #52D19D;
 }
 
 header {
@@ -14,18 +19,139 @@ header h1 {
   color: white;
   text-shadow: 1px 2px 7px rgb(91, 91, 91);
 }
-header li {
+header div img#burguer {
+  width: 25px;
+  margin: 0 10px 5px 20px;
+}
+header div img#burguer:hover {
+  cursor: pointer;
+  background-color: #52D19D;
+  padding: 2px;
+  border-radius: 2px;
+}
+header menu#listamenu {
+  background-color: #AB34D1;
+  position: absolute;
+  left: 0;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0px 8px 9px rgba(150, 150, 150, 0.538);
+}
+header menu#listamenu2 li {
   display: inline;
   text-shadow: 1px 2px 7px rgb(91, 91, 91);
+}
+header ul {
+  margin-top: 5px;
 }
 header a {
   text-decoration: none;
   color: white;
   padding: 4px;
   border-radius: 3px;
+  transition: background-color 0.3s;
 }
 header a:hover {
   background-color: #52D19D;
+}
+
+main {
+  background-color: white;
+  margin: 0 3vw 0 3vw;
+  padding: 10px 0 10px 0;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0px 3px 18px rgba(170, 52, 209, 0.5529411765);
+}
+main .divexterna {
+  text-align: justify;
+  margin: 0 2vw 0 2vw;
+}
+main h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+main div#cards {
+  text-align: center;
+  margin-top: 10px;
+}
+main div#cards > div {
+  margin-top: 10px;
+  display: inline-block;
+  box-shadow: 0px 3px 18px rgba(170, 52, 209, 0.5529411765);
+  transition: transform 0.5s;
+  border-radius: 3%;
+  width: 180px;
+  height: 165px;
+  background-color: #fac64b;
+  color: white;
+  text-shadow: 0px 3px 18px gray;
+}
+main div#cards > div > img {
+  width: 175px;
+}
+main div#cards > div:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main div#cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main div#Contato form label, main input, main textarea {
+  display: block;
+}
+main div#Contato form input {
+  margin-bottom: 10px;
+  width: 18em;
+  height: 1.8em;
+  border: none;
+  box-shadow: 0px 0.3px 3px gray;
+  border-radius: 4px;
+}
+main div#Contato form textarea {
+  margin-bottom: 10px;
+  box-shadow: 0px 0.3px 3px gray;
+  border: none;
+  border-radius: 4px;
+  width: 25em;
+  height: 8em;
+}
+main div#Contato form button {
+  width: 50px;
+  height: 20px;
+  border: none;
+  background-color: #ffba19;
+  box-shadow: 0px 0.3px 3px rgb(208, 208, 208);
+  text-shadow: 1px 2px 5px rgb(143, 143, 143);
+  color: white;
+  font-size: 14px;
+  border-radius: 3px;
+}
+main div#Contato form button:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #AB34D1;
+}
+footer p {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px 5px rgb(42, 42, 42);
+}
+
+@media (max-width: 636px) {
+  #listamenu2 {
+    display: none;
+  }
+}
+@media (min-width: 940px) {
+  main {
+    width: 870px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
